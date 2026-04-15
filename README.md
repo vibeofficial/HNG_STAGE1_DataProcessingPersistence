@@ -11,7 +11,7 @@ This project is a RESTful API built as part of the HNG Stage 1 Backend assessmen
 * CORS
 
 ## Base URL
-https://your-app-url.com
+https://hng-data-processing-persistence.vercel.app/
 
 ## Features
 * Accepts a name and processes it using 3 external APIs
