@@ -5,7 +5,7 @@ import { v7 as uuidv7 } from "uuid";
 
 export const createProfile = async (req, res) => {
   try {
-    const { name } = req.body;
+    const { name } = req.query;
 
     if (!name) {
       return res.status(400).json({

@@ -3,7 +3,7 @@ import { createProfile, deleteProfile, getAllProfiles, getProfile } from "../con
 import express from "express";
 const router = express.Router();
 
-router.post('/profiles', createProfile);
+router.get('/profiles', createProfile);
 router.get('/profiles', getAllProfiles);
 router.get('/profiles/:id', getProfile);
 router.delete('/profiles/:id', deleteProfile);
