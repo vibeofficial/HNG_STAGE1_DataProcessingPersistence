@@ -35,14 +35,14 @@ export const createProfile = async (req, res) => {
         status: "error",
         message: "Genderize returned an invalid response"
       });
-    }
+    };
 
     if (!ageRes.data.age) {
       return res.status(502).json({
         status: "error",
         message: "Agify returned an invalid response"
       });
-    }
+    };
 
     if (!nationRes.data.country.length) {
       return res.status(502).json({
@@ -135,7 +135,7 @@ export const getAllProfiles = async (req, res) => {
         name: data.name,
         gender: data.gender,
         age: data.age,
-        age_groudata: data.age_group,
+        age_group: data.age_group,
         country_id: data.country_id
       }))
     });
